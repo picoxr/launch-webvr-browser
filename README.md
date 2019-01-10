@@ -14,10 +14,12 @@
 android:sharedUserId="android.uid.system"
 ```
 
+![](https://github.com/PicoSupport/LauncherWebVR/blob/master/01.png)
+
 Add Permission
 
 ```
-<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+ <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 ```
 
