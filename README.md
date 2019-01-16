@@ -12,7 +12,9 @@ this demo can read the url from config file , then launch WebVR App to open the 
 4. Build this project and launch, then it will switch to WebVR App and open the url.
 
 ## Class name
+```
 android:name="jeffrey.example.com.launcherwebvr.MainActivity"
+```
 
 ## Permission
 
