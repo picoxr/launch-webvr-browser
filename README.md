@@ -14,10 +14,11 @@ this demo can read the url from config file , then launch WebVR App to open the 
 ## Class name
 android:name="jeffrey.example.com.launcherwebvr.MainActivity"
 
-# Permission
-<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-add shardUserId property:
+## Permission
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/> 
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/> 
+add shardUserId property: <br>
+
 ```
 android:sharedUserId="android.uid.system"
 ```
