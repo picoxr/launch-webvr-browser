@@ -29,7 +29,7 @@ Add shardUserId property:
 android:sharedUserId="android.uid.system"
 ```
 
-![](https://github.com/PicoSupport/LauncherWebVR/blob/master/01.png)
+![](https://github.com/picoxr/LauncherWebVR/blob/master/01.png)
 
 ## Note
 This demo requires system signature. About how to sign a apk, refer to this [Customize Launcher on Pico Device](https://github.com/picoxr/support/blob/master/Customize%20Launcher%20on%20Pico%20Device.docx?raw=true).
