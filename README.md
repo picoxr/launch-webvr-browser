@@ -8,7 +8,7 @@ this demo can read the url from config file , then launch WebVR App to open the 
 ## Usage
 1. First, copy the config file (config.txt) to the Download directory of the device.
 2. Modify the url in config.txt to what you need.
-3. Install WebVR App (chromepublic20180504.apk)
+3. Install WebVR browser (chromepublic20180504.apk)
 4. Build this project and launch, then it will switch to WebVR App and open the url.
 
 ## Class name
@@ -23,7 +23,7 @@ android:name="jeffrey.example.com.launcherwebvr.MainActivity"
  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 ```
 
-add shardUserId property: <br>
+add shardUserId property: 
 
 ```
 android:sharedUserId="android.uid.system"
