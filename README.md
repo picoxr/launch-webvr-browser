@@ -1,6 +1,6 @@
 # Launch WebVR Browser 
 
-Note: Regarding JAR file creation and usage, please refer to [the Guideline](https://github.com/PicoSupport/picoxr/blob/master/How_to_use_JAR_file_in_Unity_project_on_Pico_device.docx)
+Note: Regarding JAR file creation and usage, please refer to [the Guideline](https://github.com/picoxr/picoxr/blob/master/How_to_use_JAR_file_in_Unity_project_on_Pico_device.docx)
 
 ## Introduction
 This demo can read the url from config file , then launch WebVR Browser to open the url.
