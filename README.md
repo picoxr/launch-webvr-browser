@@ -1,15 +1,15 @@
-# Launch WebVR browser Instruction
+# Launch WebVR Browser Instruction
 
-Note: Regarding java package creation and usege, please refer to [the Guideline](https://github.com/PicoSupport/PicoSupport/blob/master/How_to_use_JAR_file_in_Unity_project_on_Pico_device.docx)
+Note: Regarding JAR file creation and usage, please refer to [the Guideline](https://github.com/PicoSupport/PicoSupport/blob/master/How_to_use_JAR_file_in_Unity_project_on_Pico_device.docx)
 
 ## Introduction
-this demo can read the url from config file , then launch WebVR App to open the url.
+this demo can read the url from config file , then launch WebVR Browser to open the url.
 
 ## Usage
 1. First, copy the config file (config.txt) to the Download directory of the device.
 2. Modify the url in config.txt to what you need.
-3. Install WebVR browser (chromepublic20180504.apk)
-4. Build this project and launch, then it will switch to WebVR App and open the url.
+3. Install WebVR browser (chromepublic20180504.apk).
+4. Build this project and launch, then it will switch to WebVR Browser and open the url.
 
 ## Class name
 ```
