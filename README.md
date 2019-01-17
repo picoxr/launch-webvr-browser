@@ -3,7 +3,7 @@
 Note: Regarding JAR file creation and usage, please refer to [the Guideline](https://github.com/PicoSupport/PicoSupport/blob/master/How_to_use_JAR_file_in_Unity_project_on_Pico_device.docx)
 
 ## Introduction
-this demo can read the url from config file , then launch WebVR Browser to open the url.
+This demo can read the url from config file , then launch WebVR Browser to open the url.
 
 ## Usage
 1. First, copy the config file (config.txt) to the Download directory of the device.
@@ -23,7 +23,7 @@ android:name="jeffrey.example.com.launcherwebvr.MainActivity"
  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 ```
 
-add shardUserId property: 
+Add shardUserId property: 
 
 ```
 android:sharedUserId="android.uid.system"
