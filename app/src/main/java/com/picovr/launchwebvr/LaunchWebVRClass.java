@@ -1,36 +1,35 @@
-package jeffrey.example.com.launcherwebvr;
+package com.picovr.launchwebvr;
 
+import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
-import android.os.Environment;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.util.Log;
-
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
-public class MainActivity extends AppCompatActivity {
+public class LaunchWebVRClass {
+    private static final String TAG = "LaunchWebVRClass";
 
-    private String hello;
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
-        String filepath= Environment.getExternalStoragePublicDirectory(DOWNLOAD_SERVICE)+"/config.txt";
-        Log.e("lll", filepath );
-        Uri uri=Uri.parse(readFile(filepath));
+    /**
+     * Launch webVR browser.
+     * @param context Context
+     * @param filePath The path of config file. eg: /storage/emulated/0/Download/config.txt
+     */
+    public void launch(Context context, String filePath) {
+        Log.e(TAG, "launch: " );
+        Log.e(TAG, filePath );
+        Uri uri=Uri.parse(readFile(filePath));
         Intent intent=new Intent();
         intent.setAction("android.intent.action.VIEW");
         intent.setData(uri);
         intent.setClassName("org.chromium.chrome","org.chromium.chrome.browser.document.ChromeLauncherActivity");
-        startActivity(intent);
+        context.startActivity(intent);
     }
 
     private String readFile(String filepath){
+        Log.e(TAG, "readFile: " );
         File file=new File(filepath);
         byte[] buff=new byte[(int) file.length()];
         FileInputStream fileInputStream= null;
@@ -38,13 +37,14 @@ public class MainActivity extends AppCompatActivity {
             fileInputStream = new FileInputStream(file);
             fileInputStream.read(buff);
             fileInputStream.close();
-            hello = new String(buff, "utf-8");
-            //hello=hello.replaceAll("\\r\\n","\n");
+            String hello = new String(buff, "utf-8");
             return  hello;
         } catch (FileNotFoundException e) {
             e.printStackTrace();
+            Log.e(TAG, "readFile: " + e.getMessage() );
         } catch (IOException e) {
             e.printStackTrace();
+            Log.e(TAG, "readFile: " + e.getMessage() );
         }
         return null;
     }
