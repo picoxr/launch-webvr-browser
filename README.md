@@ -1,7 +1,7 @@
 # Launch WebVR Browser 
 
 JAR file, demo apk and config file are in /resource.    
-Note: Regarding JAR file creation and usage, please refer to [the Guideline](https://github.com/picoxr/support/blob/master/How%20to%20Use%20JAR%20file%20in%20Unity%20project%20on%20Pico%20Device.docx)
+Note: Regarding JAR file creation and usage, please refer to [the Guideline](http://static.appstore.picovr.com/docs/JarUnity/index.html)
 
 ## Introduction
 This demo can read the url from config file , then launch WebVR Browser to open the url.
